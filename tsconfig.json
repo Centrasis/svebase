@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "lib": ["es5", "es6", "dom"],
+    "target": "ES5",
+    "allowJs": true,
+    "moduleResolution": "nodenext"
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue", "src/components.js", "src/components.js"]
+}
