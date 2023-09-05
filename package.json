@@ -2,8 +2,8 @@
     "name": "svebase",
     "version": "1.0.0",
     "description": "",
-    "main": "dist/svebase.js",
-    "module": "dist/svebase.mjs",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
     "type": "module",
     "files": [
       "dist/*",
