@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "lib": ["es5", "es6", "dom"],
-    "target": "ES5",
-    "allowJs": true,
-    "moduleResolution": "nodenext"
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "dist"
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.vue", "src/components.js", "src/components.js"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue"]
 }
