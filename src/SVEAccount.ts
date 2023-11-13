@@ -68,7 +68,7 @@ export class SVEAccount {
     protected loginInfo: SessionUserInitializer | BasicUserLoginInfo | BasicUserInitializer | TokenUserLoginInfo | string;
 
     public getID(): number {
-        return this.id;
+        return this.id
     }
 
     public getName(): string {
@@ -100,7 +100,11 @@ export class SVEAccount {
         this.loginInfo = loginInfo;
         this.loginState = LoginState.NotLoggedIn;
         if (isSessionUserInitializer(loginInfo)) {
-            this.loginState = (<SessionUserInitializer>loginInfo).loginState;
+            let init_info =  <SessionUserInitializer>loginInfo; 
+            this.id = init_info.id;
+            this.name = init_info.name;
+            this.loginState = init_info.loginState;
+            this.sessionID = init_info.sessionID;
         }
     }
 
